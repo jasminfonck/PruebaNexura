@@ -22,3 +22,6 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/index', 'IndexController@index')->name('index');
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
+Route::post('/guardar', [App\Http\Controllers\IndexController::class, 'guardar'])->name('guardar');
+Route::get('/editar', [App\Http\Controllers\IndexController::class, 'editar'])->name('editar');
+Route::get('/eliminar', [App\Http\Controllers\IndexController::class, 'eliminar'])->name('eliminar');
